@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  /* font-weight: 700; */
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr;
+  /* grid-template-columns: 375px 700px 400px; */
+  column-gap: 30px;
+
+  grid-template-areas:
+    "left middle right"
+    "left middle right"
+    "left middle right";
+}
+
+.brand {
+  color: rgb(29, 155, 240);
+  font-size: 30px;
+}
+
+.fa-comment {
+  color: #536471;
+  font-size: 14px;
+  font-weight: 520;
+}
+
+.fa-retweet {
+  color: #536471;
+  font-size: 14px;
+  font-weight: 520;
+}
+
+.fa-heart {
+  color: #536471;
+  font-size: 14px;
+  font-weight: 520;
+}
+
+.fa-arrow-up-from-bracket {
+  color: #536471;
+  font-size: 14px;
+  font-weight: 520;
+}
+
+.fa-comment:hover {
+  color: lightskyblue;
+}
+
+.fa-retweet:hover {
+  color: lightgreen;
+}
+
+.fa-heart:hover {
+  color: red;
+}
+
+.fa-arrow-up-from-bracket:hover {
+  color: lightskyblue;
+}
+
+.layout__left-sidebar {
+  grid-area: left;
+}
+
+.layout__main {
+  grid-area: middle;
+}
+
+.layout__right-container {
+  grid-area: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .layout {
+    grid-template-areas:
+      "left middle ."
+      "left middle ."
+      "left middle .";
+  }
+}
