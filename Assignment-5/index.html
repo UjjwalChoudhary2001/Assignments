@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter</title>
+    <script
+      src="https://kit.fontawesome.com/8ba658d758.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>   
+    <div class="row" style="height: 100vh; width: 100vw layout">
+         <!--Left-container-->
+      <div id="leftcontainer" class=" col-xl-3 col-lg-2 col-md-3 col-sm-2 leftcontainer  ps-0 pe-0">
+             
+        <div id="temp" class="responsive-leftmenu position-fixed  mt-2  d-none d-sm-block d-xl-none">
+          <i class="fa-brands fa-twitter brand icon"style="color:#1d9bf0;font-size:30px;"></i>
+          <br />
+          <i class="fa-solid fa-house icon"></i>
+          <br />
+          <i class="fa-solid fa-hashtag icon"></i>
+          <br />
+          <i class="fa-solid fa-bell icon"></i>
+          <br />
+          <i class="fa-solid fa-envelope icon"></i>
+          <br />
+          <i class="fa-solid fa-table-list icon"></i>
+          <br />
+          <i class="fa-solid fa-user icon"></i>
+          <span class="material-symbols-outlined icon"></span>
+          <br />
+          <button class="icon">+</button>
+        </div>
+
+        <div
+          class=" leftsidemenu d-none d-xl-block ps-5 ms-4 d-flex-columns justify-content-evenly position-fixed "
+        >
+          <i class="fa-brands fa-twitter fs-3 ps-4 mt-2" style="color: #1d9bf0"></i>
+
+          <div class="my-3 fw-bold fs-5 icon1">
+            <i class="fs-4 fa-solid fa-house me-4 ps-4"></i>Home
+          </div>
+          <div class="my-3 fs-5 icon">
+            <i class="fs-4 fa-solid fa-hashtag me-4 ps-4"></i>Explore
+          </div>
+          <div class="my-3 fs-5 icon">
+            <i class="fs-4 fa-solid fa-bell me-4 ps-4"></i>Notifications
+          </div>
+          <div class="my-3 fs-5 icon">
+            <i class="fs-4 fa-solid fa-envelope me-4 ps-4"></i>Messages
+          </div>
+          <div class="my-3 fs-5 icon">
+            <i class="fs-4 fa-solid fa-bookmark me-4 ps-4"></i>Bookmarks
+          </div>
+          <div class="my-3 fs-5 icon">
+            <i class="fs-4 fas fa-file-alt me-4 ps-4"></i>Lists
+          </div>
+          <div class="my-3 fs-5 icon">
+            <i class="fs-4 fas fa-user me-4 ps-4"></i>Profile
+          </div>
+          <div class="my-3 fs-5 icon">
+            &nbsp;&nbsp;
+            <i
+              class="fs-4 fa-solid fa-ellipsis me-4 p-1 border border-1 rounded-circle"
+            ></i
+            >More
+          </div>
+
+          <button
+            class="rounded-pill btn p-3 fw-bold"
+            style="
+              background-color: #1d9bf0;
+              width: 220px;
+              color: white;
+              margin-left: 10px;
+            "
+          >
+            Tweet
+          </button>
+        </div>
+      </div>
+                 <!--Main/center-->
+      <div class="col-xl-5 col-lg-5 col-md-9 col-sm-10 main border ps-2 pe-2">
+        <div class="tweet border-bottom p-1 bg-white sticky-top w-100">
+          <h5 class=" topheadingofcenter ms-2 " style="font-weight: 600">Home</h5>
+        </div>
+        <div class="tweet w-100 border-bottom pt-2">
+          <img
+            src="https://pbs.twimg.com/profile_images/1403955717619425284/T4AMCO2k_400x400.jpg"
+            alt=""
+            class="rounded-circle ms-2 author-logo"
+          />
+          <input
+            type="text"
+            placeholder="What's happening?"
+            class="ms-3"
+            style="height: 40px"
+          />
+          <br />
+          <div
+            class="main_part_oftweet d-flex justify-content-between p-3 mt-2"
+          >
+            <div class="footer ps-5 w-70">
+              <div class="icon-container" style="display: inline-block">
+                <a href="#" class="mx-2" style="color: #1d9bf0; font-size: 20px"
+                  ><i class="fa-solid fa-image ms-10"></i
+                ></a>
+              </div>
+              <div class="icon-container" style="display: inline-block">
+                <a href="#" class="mx-2" style="color: #1d9bf0; font-size: 20px"
+                  ><i class="fa-solid fa-photo-film"></i
+                ></a>
+              </div>
+
+              <div class="icon-container" style="display: inline-block">
+                <a href="#" class="mx-2" style="color: #1d9bf0; font-size: 20px"
+                  ><i class="fa-solid fa-square-poll-horizontal"></i
+                ></a>
+              </div>
+
+              <div class="icon-container" style="display: inline-block">
+                <a href="#" class="mx-2" style="color: #1d9bf0; font-size: 20px"
+                  ><i class="fa-solid fa-face-smile"></i
+                ></a>
+              </div>
+              <div class="icon-container" style="display: inline-block">
+                <a href="#" class="mx-2" style="color: #1d9bf0; font-size: 20px"
+                  ><i class="fa-solid fa-calendar"></i
+                ></a>
+              </div>
+              <div class="icon-container" style="display: inline-block">
+                <a href="#" class="mx-1" style="color: #1d9bf0; font-size: 20px"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></a>
+              </div>
+            </div>
+            <button
+              class="btn rounded-pill fw-bold text-center"
+              style="
+                height: 35px;
+                width: 70px;
+                background-color: #1d9bf0;
+                color: white;
+              "
+            >
+              Tweet
+            </button>
+          </div>
+        </div>
+
+        <div class="tweet d-flex p-2 border-bottom">
+          <img
+            src="https://pbs.twimg.com/profile_images/1503591435324563456/foUrqiEw_400x400.jpg"
+            alt=""
+            class="author-logo rounded-circle"
+          />
+          <div class="tweet-main">
+            <div class="header d-flex mx-2">
+              <div class="author-name fw-bold me-2">Elon Musk</div>
+              <div class="author-link me-2 text-muted">@elonmusk</div>
+              <div class="time me-2 text-muted">.&nbsp;10h</div>
+            </div>
+            <div class="tweet-content mx-2">
+              If you’ve engineered or manufactured smart watches or phones,
+              please join Neuralink! Your skills are directly applicable.
+            </div>
+            <div class="replies d-flex w-100 justify-content-around mt-3">
+              <div class="reply-container1">
+                <a href="#"
+                  ><div class="innermost icn1" id="innermost1 "><i class="fa-solid fa-comment">&nbsp;&nbsp;</i></div>16.4k</a
+                >
+              </div>
+              <div class="reply-container2">
+                <a href="#"
+                  >   
+                  <div class="innermost icn2" id="innermost2 "><i class="fa-solid fa-retweet">&nbsp;&nbsp;</i></div>1700</a
+                >
+              </div>
+              <div class="reply-container3">
+                <a href="#"
+                  ><div class="innermost icn3" id="innermost3 "><i class="fa-solid fa-heart">&nbsp;&nbsp;</i></div>302K</a
+                >
+              </div>
+              <div class="reply-container4">
+                <a href="#"
+                  ><div  class="innermost icn4" id="innermost4 "><i class="fa-solid fa-arrow-up-from-bracket"></i
+                    ></div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet d-flex p-2 border-bottom">
+          <img
+            src="https://pbs.twimg.com/profile_images/1479443900368519169/PgOyX1vt_400x400.jpg"
+            alt=""
+            class="author-logo rounded-circle"
+          />
+          <div class="tweet-main">
+            <div class="header d-flex mx-2">
+              <div class="author-name fw-bold me-2">Narendra Modi</div>
+              <div class="author-link me-2 text-muted">@narendra modi</div>
+              <div class="time me-2 text-muted">.&nbsp;15h</div>
+            </div>
+            <div class="tweet-content mx-2">
+              My talks with PM
+              <a href="#" style="text-decoration: none; color: #1d9bf0"
+                >@BorisJohnson</a
+              >
+              were wide-ranging and productive. We took stock of the ground
+              covered in the India-UK friendship and also discussed new areas of
+              cooperation. Sectors such as trade, commerce, defence and clean
+              energy figured prominently in our discussions.
+              <br />
+              <img
+                class="tweet-image w-100 rounded mt-2"
+                src="https://pbs.twimg.com/media/FQ7diJoXwAU7RMk?format=jpg&name=large"
+                alt=""
+              />
+            </div>
+            <div class="replies d-flex w-100 justify-content-around mt-3">
+              <div class="reply-container1">
+                <a href="#"
+                  ><div class="innermost icn1"><i class="fa-solid fa-comment">&nbsp;&nbsp;</i></div>16.4k</a
+                >
+              </div>
+              <div class="reply-container2">
+                <a href="#"
+                  >   
+                  <div class="innermost icn2"><i class="fa-solid fa-retweet">&nbsp;&nbsp;</i></div>1700</a
+                >
+              </div>
+              <div class="reply-container3">
+                <a href="#"
+                  ><div class="innermost icn3"><i class="fa-solid fa-heart">&nbsp;&nbsp;</i></div>302K</a
+                >
+              </div>
+              <div class="reply-container4">
+                <a href="#"
+                  ><div class="innermost icn4"><i class="fa-solid fa-arrow-up-from-bracket"></i
+                    ></div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet d-flex p-2 border-bottom">
+          <img
+            src="https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg"
+            alt=""
+            class="author-logo rounded-circle"
+          />
+          <div class="tweet-main">
+            <div class="header d-flex mx-2">
+              <div class="author-name fw-bold me-2">Bill Gates</div>
+              <div class="author-link me-2 text-muted">@Bill Gates</div>
+              <div class="time me-2 text-muted">.&nbsp;20min</div>
+            </div>
+            <div class="tweet-content mx-2">
+              Happy World Book Day! I try to read every day, whether I have a
+              busy day at the office or am out for a hike. It’s one of my
+              favorite ways to learn new things and better understand the world.
+              <br />
+              <img
+                src="https://pbs.twimg.com/media/FQ-lqEuUUAEZ7J5?format=jpg&name=medium"
+                alt=""
+                class="tweet-image w-100 rounded"
+              />
+            </div>
+            <div class="replies d-flex w-100 justify-content-around mt-3">
+              <div class="reply-container1">
+                <a href="#"
+                  ><div class="innermost icn1 reply-icon"><i class="fa-solid fa-comment">&nbsp;&nbsp;</i></div>16.4k</a
+                >
+              </div>
+              <div class="reply-container2">
+                <a href="#"
+                  >   
+                  <div class="innermost icn2 retweet-icon"><i class="fa-solid fa-retweet">&nbsp;&nbsp;</i></div>1700</a
+                >
+              </div>
+              <div class="reply-container3">
+                <a href="#"
+                  ><div class="innermost icn3 heart-icon"><i class="fa-solid fa-heart">&nbsp;&nbsp;</i></div>302K</a
+                >
+              </div>
+              <div class="reply-container4">
+                <a href="#"
+                  ><div class="innermost icn4 share-icon"><i class="fa-solid fa-arrow-up-from-bracket"></i
+                    ></div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet d-flex p-2 border-bottom">
+          <img
+            src="https://pbs.twimg.com/profile_images/1486303887342866433/28o7yW9J_400x400.jpg"
+            alt=""
+            class="author-logo rounded-circle"
+          />
+          <div class="tweet-main">
+            <div class="header d-flex mx-2">
+              <div class="author-name fw-bold me-2">Netflix India</div>
+              <div class="author-link me-2 text-muted fs-5">@NetflixIndia</div>
+              <div class="time me-2 text-muted fs-5">.&nbsp;12h</div>
+            </div>
+            <div class="tweet-content mx-2">
+              What's your dream collab? Imagine if these pan-Indian stars came
+              together ✌️😮.
+              <br />
+              <img
+                src="https://pbs.twimg.com/media/FQn6JdyaAAAdHHf?format=jpg&name=900x900"
+                alt=""
+                class="tweet-image w-50 rounded ms-5"
+              />
+            </div>
+          <div class="replies d-flex w-100 justify-content-around mt-3">
+              <div class="reply-container1">
+                <a href="#"
+                  ><div class="innermost icn1"><i class="fa-solid fa-comment">&nbsp;&nbsp;</i></div>16.4k</a
+                >
+              </div>
+              <div class="reply-container2">
+                <a href="#"
+                  >   
+                  <div class="innermost icn2"><i class="fa-solid fa-retweet">&nbsp;&nbsp;</i></div>1700</a
+                >
+              </div>
+              <div class="reply-container3">
+                <a href="#"
+                  ><div class="innermost icn3"><i class="fa-solid fa-heart">&nbsp;&nbsp;</i></div>302K</a
+                >
+              </div>
+              <div class="reply-container4">
+                <a href="#"
+                  ><div class="innermost icn4"><i class="fa-solid fa-arrow-up-from-bracket"></i
+                    ></div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet d-flex p-2 border-bottom">
+          <img
+            src="https://pbs.twimg.com/profile_images/1249391923594436608/tZZjwavR_400x400.jpg"
+            alt=""
+            class="author-logo rounded-circle"
+          />
+          <div class="tweet-main">
+            <div class="header d-flex mx-2">
+              <div class="author-name fw-bold me-2">Gautam Gambhir</div>
+              <div class="author-link me-2 text-muted">@GautumGambhir</div>
+              <div class="time me-2 text-muted">.&nbsp;22h</div>
+            </div>
+            <div class="tweet-content mx-2">
+              A true legend & an even better human being. Wish you a very happy
+              birthday
+              <a href="#" style="text-decoration: none; color: #1d9bf0"
+                >@sachin_rt</a
+              >
+              . God bless!
+            </div>
+            <div class="replies d-flex w-100 justify-content-around mt-3">
+              <div class="reply-container1">
+                <a href="#"
+                  ><div class="innermost icn1"><i class="fa-solid fa-comment">&nbsp;&nbsp;</i></div>16.4k</a
+                >
+              </div>
+              <div class="reply-container2">
+                <a href="#"
+                  >   
+                  <div class="innermost icn2"><i class="fa-solid fa-retweet">&nbsp;&nbsp;</i></div>1700</a
+                >
+              </div>
+              <div class="reply-container3">
+                <a href="#"
+                  ><div class="innermost icn3"><i class="fa-solid fa-heart">&nbsp;&nbsp;</i></div>302K</a
+                >
+              </div>
+              <div class="reply-container4">
+                <a href="#"
+                  ><div class="innermost icn4"><i class="fa-solid fa-arrow-up-from-bracket"></i
+                    ></div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--main-footer-->
+        
+        <div class="main-footer d-sm-none">
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <div class="responsive-tweetbutton">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+             <!--Right container-->
+      <div class="col-xl-4  col-lg-5 d-none d-lg-block rightcontainer border">
+        <div class="rightsidemenu ">
+            <input
+              type="text"
+              class="searchbox ms-3 sticky-top w-75"
+              placeholder="Search Twitter"
+              style="
+                border-radius: 20px;
+                height: 45px;
+                padding: 5px;
+               z-index: 5;
+              "
+            />
+
+            <div class="trends mt-3 w-75  ms-3"style="border-radius:15px">
+              <div class="block p-2" >
+                <h5 class="fw-bold">What's happening</h5>
+              </div>
+  
+              <div class="blocks p-2 ">
+                <div class="meta-info text-muted">COVID-19 . LIVE</div>
+                <div class="trendname fw-bold">
+                  India records 2,541 fresh COVID-19 cases.
+                </div>
+                <div class="meta-info text-muted">5675K Tweets</div>
+              </div>
+  
+              <div class="blocks p-2 ">
+                <div class="meta-info text-muted">Trending in India</div>
+                <div class="trendname fw-bold">#ViratKholi</div>
+                <div class="meta-info text-muted">255K Tweets</div>
+              </div>
+  
+              <div class="blocks p-2">
+                <div class="meta-info text-muted ">War in Ukraine . LIVE</div>
+                <div class="trendname fw-bold">
+                  Russian forces strike railway stations in Ukraine following US
+                  officials' visit to the country, Ukrainian authorities report
+                </div>
+                <div class="meta-info text-muted">655K Tweets</div>
+              </div>
+              <div class="block p-2" >
+                <a href="#" class="mt-2" style="color:#1d9bf0; text-decoration:none">Show more</a>
+              </div>
+            </div>
+
+
+  
+           <div id="who-to-follow" class="who-to-follow w-75 mt-3  p-2 ms-3 ">
+              <div class="who-to-follow-block">
+                <h5 class="fw-bold p-2">Who to follow</h5>
+              </div>
+  
+              <div class="who-to-follow-blocks d-flex pt-2">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1282230048716492803/fduUXbCR_400x400.jpg"
+                  alt=""
+                  class="who-to-follow-image rounded-circle"style="height:48px;width:48px ps-1"
+                />
+                <div class="who-to-follow-content ms-2 p-2">
+                  <div class="who-to-follow-name fw-bold">Sonu Sood</div>
+                  <div class="who-to-follow-slug text-muted">@SonuSood</div>
+                </div>
+                <div class="button">Follow</div>
+              </div>
+  
+              <div class="who-to-follow-blocks mt-3 d-flex pt-2">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1082744382585856001/rH_k3PtQ_400x400.jpg"
+                  alt=""
+                  class="who-to-follow-image rounded-circle"style="height:48px;width:48px"
+                />
+                <div class="who-to-follow-content ms-2 p-2">
+                  <div class="who-to-follow-name fw-bold">SpaceX</div>
+                  <div class="who-to-follow-slug text-muted">@SpaceX</div>
+                </div>
+                <div class="button">Follow</div>
+              </div>
+              <div class="block p-2" >
+                <a href="#" class="mt-2" style="color:#1d9bf0; text-decoration:none">Show more</a>
+              </div>
+            </div>
+            <div class="copyright">
+              <div class="1 text-muted mt-4 ms-4 fs-6 ">Terms of Service  Privacy Policy  Cookie Policy</div>
+              <div class="2 text-muted mt-1 ms-4 fs-6">Accessibility Ads info More</div>
+              <div class="3 text-muted mt-1 ms-4 fs-6">&copy;2022 Twitter,Inc.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
